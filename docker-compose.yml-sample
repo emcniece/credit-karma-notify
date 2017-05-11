@@ -1,0 +1,13 @@
+version: '2'
+
+services:
+
+  credit:
+    tty: true
+    stdin_open: true
+    image: emcniece/credit-karma-notify:0.0.1
+    environment:
+      ck_email: user@domain.com
+      ck_password: password
+      if_event_name: credit_karma
+      if_key: password
