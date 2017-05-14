@@ -8,10 +8,10 @@ Sends your Credit Karma score to the IFTTT Maker Service.
 docker pull emcniece/credit-karma-notify
 
 docker run --name ck-notify \
- -e ck_email=user@domain.com
- -e ck_password=password
- -e if_event_name=credit_karma
- -e if_key=password
+ -e ck_email=user@domain.com \
+ -e ck_password=password \
+ -e if_event_name=credit_karma \
+ -e if_key=password \
  -d emcniece/credit-karma-notify
 
 ```
